@@ -1,0 +1,18 @@
+package com.TestYantra.TOCS;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Example1 
+{
+	public static void main(String[] args)
+	{
+		System.setProperty("webdriver.gecko.driver","./Drivers/geckodriver.exe");
+		WebDriver driver=new FirefoxDriver();
+		driver.get("https://www.google.com/"); 	
+		String t = driver.getTitle();
+		System.out.println(t);
+		
+	}
+}
+
